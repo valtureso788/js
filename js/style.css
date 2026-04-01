@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+.add-task {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#addTaskButton {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addTaskButton:hover {
+  background-color: #005fcc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.task-text {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.task-text.done {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.task-buttons button {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.done-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
